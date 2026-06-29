@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thuỳ Linh Phạm - Portfolio Cá Nhân. Sinh viên Kinh tế phát triển chuyên ngành Phân tích dữ liệu tại Trường Đại học Kinh tế - Đại học Quốc gia Hà Nội.">
+    <title>Thuỳ Linh Phạm | Portfolio</title>
+    <!-- Google Fonts — Montserrat (headings) + Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">Thuỳ Linh</span> Phạm
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" aria-label="toggle navigation" id="navToggle">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link active">Giới thiệu</a></li>
+                    <li><a href="#education" class="nav-link">Học vấn</a></li>
+                    <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                    <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
+                    <li><a href="#contact" class="nav-link nav-btn">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Chào mừng bạn đến với Portfolio của tôi</span>
+                    <h1 class="hero-title">
+                        Xin chào, tôi là <span class="text-gradient">Thuỳ Linh Phạm</span>
+                    </h1>
+                    <h2 class="hero-typed-wrapper">
+                        Tôi là <span id="typed-text" class="typed-text"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Sinh viên Kinh tế phát triển định hướng Phân tích dữ liệu. Tôi đam mê nghiên cứu chính sách công, phân tích số liệu thực nghiệm và xây dựng giải pháp tự động hóa quy trình làm việc.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#experience" class="btn btn-primary">Xem kinh nghiệm</a>
+                        <a href="#contact" class="btn btn-secondary">Liên hệ ngay</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://www.facebook.com/share/1EHEUc7LaK/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://zalo.me/0334127152" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Zalo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </a>
+                        <a href="mailto:ptl050618@gmail.com" class="social-icon" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Hiển thị ảnh cá nhân ở phần đầu trang -->
+                <div class="hero-image-container">
+                    <div class="hero-blob"></div>
+                    <img src="assets/avatar.jpg" alt="Ảnh cá nhân Thuỳ Linh Phạm" class="hero-img">
+                </div>
+            </div>
+            <div class="scroll-down-arrow">
+                <a href="#about" aria-label="Scroll Down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bounce"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Giới thiệu</span>
+                    <h2 class="title">Về Bản Thân Tôi</h2>
+                    <div class="accent-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image-wrapper">
+                        <div class="image-frame">
+                            <img src="assets/avatar.jpg" alt="Thuỳ Linh Phạm Portrait" class="about-img">
+                        </div>
+                    </div>
+                    <div class="about-info">
+                        <h3 class="about-headline">Kinh tế phát triển & Phân tích dữ liệu</h3>
+                        <p class="about-text">
+                            Tôi là sinh viên ngành Kinh tế phát triển, chuyên ngành Phân tích dữ liệu tại Đại học Kinh tế - Đại học Quốc gia Hà Nội. Tôi quan tâm đến nghiên cứu kinh tế, chính sách công, phân tích dữ liệu và các ứng dụng của dữ liệu trong giải quyết các vấn đề kinh tế - xã hội. Tôi luôn chủ động học hỏi, phát triển kỹ năng chuyên môn và tìm kiếm cơ hội áp dụng kiến thức vào thực tiễn.
+                        </p>
+                        
+                        <h3 class="about-headline" style="margin-top: 30px; font-size: 1.5rem;">Mục tiêu nghề nghiệp</h3>
+                        <p class="about-text">
+                            Tôi mong muốn phát triển sự nghiệp trong lĩnh vực phân tích dữ liệu, nghiên cứu kinh tế và chính sách công. Trong thời gian học tập, tôi hướng tới việc nâng cao năng lực phân tích dữ liệu, nghiên cứu định lượng và ứng dụng các công cụ như Excel, Stata, R và Python để giải quyết các vấn đề kinh tế - xã hội.
+                        </p>
+                        <p class="about-text">
+                            Mục tiêu của tôi là tích lũy kinh nghiệm thực tiễn thông qua các dự án nghiên cứu, thực tập và hoạt động chuyên môn, từ đó trở thành một chuyên viên phân tích dữ liệu hoặc nghiên cứu viên có khả năng đưa ra các khuyến nghị dựa trên bằng chứng và dữ liệu.
+                        </p>
+
+                        <!-- Highlights Grid -->
+                        <div class="about-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                                </div>
+                                <div class="highlight-desc">
+                                    <h4>Đại học</h4>
+                                    <p>Đại học Kinh tế - ĐHQGHN</p>
+                                </div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                                </div>
+                                <div class="highlight-desc">
+                                    <h4>Định hướng</h4>
+                                    <p>Data Analyst / Policy Researcher</p>
+                                </div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                                </div>
+                                <div class="highlight-desc">
+                                    <h4>Công cụ lõi</h4>
+                                    <p>Excel, n8n, Stata, Power BI</p>
+                                </div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path><circle cx="12" cy="12" r="4"></circle></svg>
+                                </div>
+                                <div class="highlight-desc">
+                                    <h4>Đam mê</h4>
+                                    <p>Tự động hóa & Khảo sát thực địa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-padding bg-light scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Quá trình đào tạo</span>
+                    <h2 class="title">Học vấn</h2>
+                    <div class="accent-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - Hiện tại</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Đại học Kinh tế - Đại học Quốc gia Hà Nội</h3>
+                            <span class="timeline-institution">Khoa: Kinh tế phát triển | Chuyên ngành: Phân tích dữ liệu</span>
+                            <p class="timeline-text">
+                                Đào tạo chuyên sâu về kinh tế học, các phương pháp phân tích định lượng, và ứng dụng công nghệ trong nghiên cứu chính sách phát triển. Tích cực tham gia các đề tài nghiên cứu khoa học sinh viên và ứng dụng xử lý dữ liệu thực tế.
+                            </p>
+                            <div class="timeline-meta">
+                                <span class="badge">Khoa: Kinh tế phát triển</span>
+                                <span class="badge">Chuyên ngành: Phân tích dữ liệu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Năng lực cá nhân</span>
+                    <h2 class="title">Kỹ năng</h2>
+                    <div class="accent-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Skill Category 1 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="category-icon"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            <h3>Phân tích & Công cụ văn phòng</h3>
+                        </div>
+                        <div class="skill-badges-grid">
+                            <span class="skill-badge">Microsoft Excel</span>
+                            <span class="skill-badge">Microsoft Word</span>
+                            <span class="skill-badge">Phân tích dữ liệu</span>
+                            <span class="skill-badge">Microsoft Power BI</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Category 2 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="category-icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline><line x1="12" y1="2" x2="12" y2="22"></line></svg>
+                            <h3>Tự động hóa & Thiết kế</h3>
+                        </div>
+                        <div class="skill-badges-grid">
+                            <span class="skill-badge">n8n Workflow Automation</span>
+                            <span class="skill-badge">Canva (Thiết kế đồ họa)</span>
+                            <span class="skill-badge">Stata (Kinh tế lượng)</span>
+                            <span class="skill-badge">R & Python (Cơ bản)</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Category 3 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="category-icon"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                            <h3>Kỹ năng mềm</h3>
+                        </div>
+                        <div class="skill-badges-grid">
+                            <span class="skill-badge">Tinh thần học hỏi và tiếp thu</span>
+                            <span class="skill-badge">Kỹ năng giao tiếp</span>
+                            <span class="skill-badge">Kỹ năng làm việc nhóm</span>
+                            <span class="skill-badge">Giải quyết vấn đề</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="experience-section section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Hoạt động thực tiễn</span>
+                    <h2 class="title">Kinh nghiệm làm việc</h2>
+                    <div class="accent-line"></div>
+                </div>
+
+                <div class="experience-container">
+                    <!-- Tab Headers -->
+                    <div class="tab-list" role="tablist" aria-label="Job Experience Tabs">
+                        <button class="tab-link active" role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1">
+                            Ban Đối ngoại
+                        </button>
+                        <button class="tab-link" role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2">
+                            Vận hành Khách sạn
+                        </button>
+                    </div>
+
+                    <!-- Tab Content Panels -->
+                    <div class="tab-content">
+                        <!-- Panel 1 -->
+                        <div class="tab-panel active" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+                            <div class="job-meta">
+                                <h3 class="job-role">Thành viên Ban Đối ngoại <span class="company">@ Câu lạc bộ / Ban liên lạc sinh viên</span></h3>
+                                <p class="job-dates">Tháng 9/2024 - Hiện tại | Hà Nội, Việt Nam</p>
+                            </div>
+                            <ul class="job-bullets">
+                                <li>Hỗ trợ truyền thông và kết nối với các đối tác bên ngoài để mở rộng quan hệ hợp tác cho câu lạc bộ.</li>
+                                <li>Hỗ trợ tổ chức sự kiện và các hoạt động chuyên môn của câu lạc bộ, nâng cao tính chuyên nghiệp của chương trình.</li>
+                                <li>Quản lý thông tin liên hệ và hồ sơ hành chính, đảm bảo lưu trữ dữ liệu chính xác và có tổ chức.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Panel 2 -->
+                        <div class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+                            <div class="job-meta">
+                                <h3 class="job-role">Hỗ trợ vận hành khách sạn <span class="company">@ Doanh nghiệp Hospitality</span></h3>
+                                <p class="job-dates">Tháng 6/2023 - Tháng 9/2023 | Quảng Ninh, Việt Nam</p>
+                            </div>
+                            <ul class="job-bullets">
+                                <li>Hỗ trợ check-in/check-out và tiếp nhận yêu cầu của khách để đảm bảo trải nghiệm dịch vụ tốt nhất.</li>
+                                <li>Quản lý đặt phòng qua các nền tảng OTA như Booking.com và Agoda hiệu quả, giảm thiểu lỗi overbooking.</li>
+                                <li>Phối hợp vận hành hằng ngày và kiểm tra tình trạng phòng để duy trì tiêu chuẩn chất lượng.</li>
+                                <li>Hỗ trợ chăm sóc khách hàng và xử lý các vấn đề phát sinh một cách nhanh chóng, chuyên nghiệp.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding bg-light scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Kết nối với tôi</span>
+                    <h2 class="title">Liên hệ</h2>
+                    <div class="accent-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info-panel">
+                        <h3>Bạn có mong muốn hợp tác?</h3>
+                        <p class="contact-subtext">
+                            Nếu bạn quan tâm đến các đề tài nghiên cứu kinh tế, phân tích số liệu chính sách công, hay ứng dụng tự động hóa n8n trong doanh nghiệp, hãy gửi tin nhắn cho tôi nhé!
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div class="detail-content">
+                                    <span>Địa chỉ Email</span>
+                                    <div class="copy-email-wrapper">
+                                        <a href="mailto:ptl050618@gmail.com" class="email-link">ptl050618@gmail.com</a>
+                                        <button class="copy-btn" id="copyEmailBtn" aria-label="Sao chép email" title="Sao chép vào khay nhớ tạm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="copy-icon"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon hidden"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div class="detail-content">
+                                    <span>Địa điểm</span>
+                                    <p>Hà Nội, Việt Nam</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="connection-socials">
+                            <h4>Mạng xã hội:</h4>
+                            <div class="social-flex">
+                                <a href="https://www.facebook.com/share/1EHEUc7LaK/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-badge">
+                                    Facebook
+                                </a>
+                                <a href="https://zalo.me/0334127152" target="_blank" rel="noopener noreferrer" class="social-badge">
+                                    Zalo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel">
+                        <form id="contactForm" class="contact-form" autocomplete="on">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="userName">Họ và tên</label>
+                                    <input type="text" id="userName" name="name" required placeholder="Nguyễn Văn A" autocomplete="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="userEmail">Địa chỉ Email</label>
+                                    <input type="email" id="userEmail" name="email" required placeholder="email@viethoa.com" autocomplete="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="userSubject">Chủ đề</label>
+                                <input type="text" id="userSubject" name="subject" required placeholder="Hợp tác nghiên cứu / Cơ hội công việc">
+                            </div>
+                            <div class="form-group">
+                                <label for="userMessage">Lời nhắn</label>
+                                <textarea id="userMessage" name="message" rows="5" required placeholder="Chào Thuỳ Linh, mình muốn thảo luận về..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                                <span class="btn-text">Gửi tin nhắn</span>
+                                <span class="spinner hidden"></span>
+                            </button>
+                            <!-- Form Success / Error Message -->
+                            <div id="formStatus" class="form-status-msg hidden"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <div class="container footer-content">
+            <p>&copy; 2026 Thuỳ Linh Phạm. Đã đăng ký bản quyền.</p>
+            <p>Thiết kế theo phong cách Luminous Pastel — nhẹ nhàng, tinh tế, chuyên nghiệp.</p>
+        </div>
+    </footer>
+
+    <!-- Research Project Details Modal -->
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-container">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Đóng">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="modal-content" id="modalContent">
+                <!-- Content will be dynamically inserted by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
